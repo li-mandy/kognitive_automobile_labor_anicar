@@ -1,0 +1,18 @@
+<launch>
+
+    <arg name="config" default="$(find additional_task_ros_tool)/launch/params/robot_detector_parameters.yaml"/>
+    <arg name="nodelet_manager_name" default="nodelet_manager_robot_detector"/>
+    <arg name="start_nodelet_manager" default="true"/>
+    <arg name="nodelet_name" default="robot_detector"/>
+
+    <!-- Nodelet manager (if enabled) -->
+    <node pkg="nodelet" type="nodelet" name="$(arg nodelet_manager_name)" args="manager" output="screen"
+          if="$(arg start_nodelet_manager)"/>
+
+    <!-- RobotDetector -->
+    <node pkg="nodelet" type="nodelet" name="$(arg nodelet_name)"
+          args="load additional_task_ros_tool/RobotDetectorNodelet $(arg nodelet_manager_name)" output="screen" required="true">
+        <rosparam command="load" file="$(arg config)"/>
+    </node>
+
+</launch>

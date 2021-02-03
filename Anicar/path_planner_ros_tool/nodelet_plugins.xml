@@ -1,0 +1,12 @@
+<library path="lib/libpath_planner_nodelet">
+<class name="path_planner_ros_tool/PathPlannerNodelet"
+       type="path_planner_ros_tool::PathPlannerNodelet" base_class_type="nodelet::Nodelet">
+  <description></description>
+</class>
+</library>
+<library path="lib/libstate_machine_nodelet">
+<class name="path_planner_ros_tool/StateMachineNodelet"
+       type="path_planner_ros_tool::StateMachineNodelet" base_class_type="nodelet::Nodelet">
+  <description></description>
+</class>
+</library>

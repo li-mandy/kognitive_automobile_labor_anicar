@@ -1,0 +1,9 @@
+<launch>
+
+  <arg name="config" default="$(find path_planner_ros_tool)/launch/params/path_planner_parameters.yaml" />
+
+  <node pkg="path_planner_ros_tool" type="path_planner" name="path_planner" output="screen">
+    <rosparam command="load" file="$(arg config)"/>
+  </node>
+
+</launch>

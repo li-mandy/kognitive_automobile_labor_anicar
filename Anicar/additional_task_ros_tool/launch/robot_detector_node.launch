@@ -1,0 +1,9 @@
+<launch>
+
+  <arg name="config" default="$(find additional_task_ros_tool)/launch/params/robot_detector_parameters.yaml" />
+
+  <node pkg="additional_task_ros_tool" type="robot_detector" name="robot_detector" output="screen">
+    <rosparam command="load" file="$(arg config)"/>
+  </node>
+
+</launch>

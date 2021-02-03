@@ -1,0 +1,8 @@
+<launch>
+    <!-- uncomment this if your unittest advertises /clock" -->
+    <!--<param name="/use_sim_time" value="True"/>-->
+
+    <test test-name="robot_detector_node_test" pkg="additional_task_ros_tool" type="robot_detector_node-test" time-limit="60.0"/>
+    <include file="$(find additional_task_ros_tool)/launch/robot_detector_node.launch"/>
+</launch>
+

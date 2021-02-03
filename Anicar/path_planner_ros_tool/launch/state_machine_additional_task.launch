@@ -1,0 +1,9 @@
+<launch>
+
+  <arg name="config" default="$(find path_planner_ros_tool)/launch/params/state_machine_parameters.yaml" />
+  <param name="with_zebra" type="bool" value="true" />
+  <node pkg="path_planner_ros_tool" type="state_machine" name="state_machine" output="screen">
+    <rosparam command="load" file="$(arg config)"/>
+  </node>
+
+</launch>

@@ -1,0 +1,71 @@
+<package format="2">
+  <name>additional_task_ros_tool</name>
+  <version>0.0.0</version>
+  <description>dsa</description>
+
+  <license>MRT</license>
+  <maintainer email="uodje@student.kit.edu">Matthias Schreck</maintainer>
+  <author email="uodje@student.kit.edu">Matthias Schreck</author>
+  <url type="repository">https://gitlab.mrt.uni-karlsruhe.de/kal5/additional_task_ros_tool</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>mrt_cmake_modules</build_depend>
+  <build_depend>rosinterface_handler</build_depend>
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+  <test_depend>gtest</test_depend>
+  <test_depend>rostest</test_depend>
+
+  <build_depend>pcl_conversions</build_depend>
+  <build_depend>pcl_ros</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <!-- <build_depend>libpcl-all-dev</build_depend>-->
+  <!-- <exec_depend>libpcl-all</exec_depend>-->
+
+   <exec_depend>message_runtime</exec_depend>
+   <exec_depend>pcl_conversions</exec_depend>
+   <exec_depend>pcl_ros</exec_depend>
+   <exec_depend>sensor_msgs</exec_depend>
+
+
+
+   <depend>automated_driving_msgs</depend>
+   <depend>mrt_opencv</depend>
+  <depend>eigen_conversions</depend>
+   <build_depend>roscpp</build_depend>
+   <!-- <depend>rospy</depend> Use this instead of roscpp  when writing a python node -->
+  <depend>roslib</depend>
+  <depend>nodelet</depend>
+
+  <!-- <depend>libpcl-all-dev</depend>-->
+
+
+
+  <!--
+    Documentation for dependencies:
+    <build_depend>            Build-time dependency required to build
+                              this package, e.g. boost, opencv.
+    <build_export_depend>     Exported build-time dependency required to
+                              build packages that depend on this package,
+                              e.g. boost, opencv.
+    <exec_depend>             Execution dependency required to run this
+                              package, e.g. boost, opencv.
+    <depend>                  Build-time, exported build-time and execution
+                              dependency. This is a bundled synonym for
+                              <build_depend>, <build_export_depend> and
+                              <exec_depend>.
+  -->
+  <!--
+    Example:
+    <depend>mrt_opencv</depend>
+  -->
+  <depend>cv_bridge</depend>
+  <depend>dynamic_reconfigure</depend>
+  <depend>message_filters</depend>
+  <depend>tf2_ros</depend>
+  <depend>mrt_pcl</depend>
+
+  <export>
+    <nodelet plugin="${prefix}/nodelet_plugins.xml" /><!-- Other tools can request additional information be placed here -->
+  </export>
+</package>

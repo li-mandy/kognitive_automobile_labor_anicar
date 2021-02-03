@@ -1,0 +1,18 @@
+<launch>
+
+    <arg name="config" default="$(find path_planner_ros_tool)/launch/params/state_machine_parameters.yaml"/>
+    <arg name="nodelet_manager_name" default="nodelet_manager_state_machine"/>
+    <arg name="start_nodelet_manager" default="true"/>
+    <arg name="nodelet_name" default="state_machine"/>
+
+    <!-- Nodelet manager (if enabled) -->
+    <node pkg="nodelet" type="nodelet" name="$(arg nodelet_manager_name)" args="manager" output="screen"
+          if="$(arg start_nodelet_manager)"/>
+
+    <!-- StateMachine -->
+    <node pkg="nodelet" type="nodelet" name="$(arg nodelet_name)"
+          args="load path_planner_ros_tool/StateMachineNodelet $(arg nodelet_manager_name)" output="screen" required="true">
+        <rosparam command="load" file="$(arg config)"/>
+    </node>
+
+</launch>

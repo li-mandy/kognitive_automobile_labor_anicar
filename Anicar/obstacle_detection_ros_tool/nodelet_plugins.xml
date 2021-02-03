@@ -1,0 +1,18 @@
+<library path="lib/libobstacle_detection_nodelet">
+<class name="obstacle_detection_ros_tool/ObstacleDetectionNodelet"
+       type="obstacle_detection_ros_tool::ObstacleDetectionNodelet" base_class_type="nodelet::Nodelet">
+  <description></description>
+</class>
+</library>
+<library path="lib/libtf-_demo_nodelet">
+<class name="obstacle_detection_ros_tool/Tf-DemoNodelet"
+       type="obstacle_detection_ros_tool::Tf-DemoNodelet" base_class_type="nodelet::Nodelet">
+  <description></description>
+</class>
+</library>
+<library path="lib/libtransform_2_grid_map_nodelet">
+<class name="obstacle_detection_ros_tool/Transform2GridMapNodelet"
+       type="obstacle_detection_ros_tool::Transform2GridMapNodelet" base_class_type="nodelet::Nodelet">
+  <description></description>
+</class>
+</library>

@@ -1,0 +1,9 @@
+<launch>
+
+  <arg name="config" default="$(find obstacle_detection_ros_tool)/launch/params/obstacle_detection_parameters.yaml" />
+
+  <node pkg="obstacle_detection_ros_tool" type="obstacle_detection" name="obstacle_detection" output="screen">
+    <rosparam command="load" file="$(arg config)"/>
+  </node>
+
+</launch>

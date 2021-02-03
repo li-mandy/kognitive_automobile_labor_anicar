@@ -1,0 +1,6 @@
+<launch>
+
+    <test test-name="obstacle_detection_nodelet_test" pkg="obstacle_detection_ros_tool" type="obstacle_detection_nodelet-test" time-limit="60.0"/>
+    <include file="$(find obstacle_detection_ros_tool)/launch/obstacle_detection_nodelet.launch"/>
+</launch>
+

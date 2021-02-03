@@ -1,0 +1,6 @@
+<launch>
+
+    <test test-name="sign_detection_nodelet_test" pkg="sign_detection_ros_tool" type="sign_detection_nodelet-test" time-limit="60.0"/>
+    <include file="$(find sign_detection_ros_tool)/launch/sign_detection_nodelet.launch"/>
+</launch>
+

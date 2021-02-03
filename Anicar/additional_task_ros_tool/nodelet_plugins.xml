@@ -1,0 +1,12 @@
+<library path="lib/librobot_detector_nodelet">
+<class name="additional_task_ros_tool/RobotDetectorNodelet"
+       type="additional_task_ros_tool::RobotDetectorNodelet" base_class_type="nodelet::Nodelet">
+  <description></description>
+</class>
+</library>
+<library path="lib/libkalman_filter_nodelet">
+<class name="additional_task_ros_tool/KalmanFilterNodelet"
+       type="additional_task_ros_tool::KalmanFilterNodelet" base_class_type="nodelet::Nodelet">
+  <description></description>
+</class>
+</library>

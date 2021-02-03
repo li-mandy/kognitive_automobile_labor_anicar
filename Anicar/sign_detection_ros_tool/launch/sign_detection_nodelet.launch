@@ -1,0 +1,18 @@
+<launch>
+
+    <arg name="config" default="$(find sign_detection_ros_tool)/launch/params/sign_detection_parameters.yaml"/>
+    <arg name="nodelet_manager_name" default="nodelet_manager_sign_detection"/>
+    <arg name="start_nodelet_manager" default="true"/>
+    <arg name="nodelet_name" default="sign_detection"/>
+
+    <!-- Nodelet manager (if enabled) -->
+    <node pkg="nodelet" type="nodelet" name="$(arg nodelet_manager_name)" args="manager" output="screen"
+          if="$(arg start_nodelet_manager)"/>
+
+    <!-- SignDetection -->
+    <node pkg="nodelet" type="nodelet" name="$(arg nodelet_name)"
+          args="load sign_detection_ros_tool/SignDetectionNodelet $(arg nodelet_manager_name)" output="screen" required="true">
+        <rosparam command="load" file="$(arg config)"/>
+    </node>
+
+</launch>

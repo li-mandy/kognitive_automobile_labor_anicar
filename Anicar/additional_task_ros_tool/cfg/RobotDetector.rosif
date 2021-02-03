@@ -1,0 +1,112 @@
+#!/usr/bin/env python
+"""
+Add your desired parameters here. All required headers will be generated from this.
+!!!IMPORTANT this file must be executable !!!
+
+Use one of these commands to add parameters to your parameter struct:
+
+def add(self, name, paramtype, description, level=0, edit_method='""', default=None, min=None, max=None, configurable=False, global_scope=False, constant=False):
+        Adds parameters to your parameter struct.
+
+def add_enum(self, name, description, entry_strings, default=None, paramtype='int'):
+        Adds an enum to dynamic reconfigure
+
+def add_group(self, name):
+        Create a parameter group for the dynamic_reconfigure window
+
+def add_publisher(self, name, message_type, description, default_topic=None, default_queue_size=5, topic_param=None,
+                  queue_size_param=None, header=None, module=None, configurable=False, scope="private",
+                  constant=False, diagnosed=False, min_frequency=0., min_frequency_param=None, max_delay=float('inf'),
+                  max_delay_param=None):
+        Adds an initialized publisher to your parameter struct and parameter for its topic and queue size.
+        Diagnosed publishers require the line: gen.add_diagnostic_updater().
+
+
+def add_subscriber(self, name, message_type, description, default_topic=None, default_queue_size=5, no_delay=False,
+                   topic_param=None, queue_size_param=None, header=None, module=None, configurable=False,
+                   scope='private', constant=False, diagnosed=False, min_frequency=0., min_frequency_param=None,
+                   max_delay=float('inf'), max_delay_param=None):
+        Adds an initialized subscriber to your parameter struct and parameters for topic and queue size.
+        Diagnosed subscribers require the line: gen.add_diagnostic_updater().
+
+
+For more information on the API, see here: https://gitlab.mrt.uni-karlsruhe.de/MRT/rosinterface_handler/blob/master/doc/HowToWriteYourFirstInterfaceFile.md
+"""
+from rosinterface_handler.interface_generator_catkin import *
+
+gen = InterfaceGenerator()
+
+# Add a parameter for changing verbosity (=log level) on the fly
+gen.add_verbosity_param(configurable=True)
+
+# Your Params here
+gen.add("timer_rate", paramtype='double', description="publisher frequency", default=16, min=12, max=20, configurable=True, global_scope=False)
+gen.add("dummy", paramtype='double', description="My Dummy Parameter", default=0.1, min=0, max=1, configurable=True, global_scope=False)
+gen.add("queue_size", paramtype="int", description="queue size", default=10, min=0, max=100, configurable=True)
+gen.add("kinect_offset", paramtype="double", description="translation between RGB camera and IR sensor", default=0, min=0, max=100, configurable=True)
+gen.add("image_scaling", paramtype="double", description="image scaling to save processing time", default=0, min=0, max=100, configurable=True)
+gen.add("ini_x", paramtype='double', description="initial x", default=9.41)#x_zebra_mitte
+gen.add("ini_y", paramtype='double', description="initial x", default=5.63)#y_zebra_mitte
+gen.add("ini_v_x", paramtype='double', description="initial y", default=0)
+gen.add("ini_v_y", paramtype='double', description="initial y", default=0)
+
+gen.add("points_threshold", paramtype="int", description="minimum threshold of points for line fitting", default=0, configurable=True)
+#gen.add("object_history_threshold", paramtype="int", description="number of stored objects to estimate velocity", default=0, configurable=True)
+gen.add("hue_min", paramtype="int", description="minimum hue in the hsv image", default=0, configurable=True)
+gen.add("hue_max", paramtype="int", description="maximum hue in the hsv image", default=0, configurable=True)
+gen.add("R_x", paramtype='double', description="x component of R", default=0.1)
+gen.add("R_y", paramtype='double', description="y component of R", default=0.1)
+#gen.add("saturation_min", paramtype="int", description="minimum saturation in the hsv image", default=0, configurable=True)
+#gen.add("saturation_max", paramtype="int", description="maximum saturation in the hsv image", default=0, configurable=True)
+gen.add("value_min", paramtype="int", description="minimum value in the hsv image", default=0, configurable=True)
+gen.add("value_max", paramtype="int", description="maximum value in the hsv image", default=0, configurable=True)
+gen.add("dT_max", paramtype="double", description="maximum time difference", default=0, configurable=True)
+gen.add("y_grenz", paramtype="double", description="maximum time difference", default=0, configurable=True)
+gen.add("x_min", paramtype="double", description="maximum time difference", default=8., configurable=True)#8.21
+gen.add("x_max", paramtype="double", description="maximum time difference", default=10.55, configurable=True)
+gen.add("y_min", paramtype="double", description="maximum time difference", default=5, configurable=True)#5.09
+gen.add("y_max", paramtype="double", description="maximum time difference", default=6.18, configurable=True)#5.09
+
+#* Oben Tisch x=10.55 y=6.87
+#* Vorne Auf der Linie x=8.2151 y=6.1847
+#* Zebbrastreifen Oben x=9.655 y= 6.183
+#* zebra unten x=9.169 y=5.081
+
+gen.add("ini_state_uncertainty", paramtype="double", description="maximum time difference", default=10000, configurable=True)#10000
+
+
+#gen.add("cutV", paramtype="double", description="cut off upper area of the images", default=0.4, configurable=True)
+
+# Frames
+frame = gen.add_group("Frames")
+frame.add("kinect_ir_frame", paramtype="std::string", description="frame id", default="", configurable=False)
+frame.add("kinect_rgb_frame", paramtype="std::string", description="frame id", default="", configurable=False)
+frame.add("vehicle_frame", paramtype="std::string", description="frame id", default="", configurable=False)
+frame.add("camera_top_frame", paramtype="std::string", description="frame id", default="", configurable=False)
+frame.add("stargazer_frame", paramtype="std::string", description="frame id", default="stargazer", configurable=False)
+frame.add("world_frame", paramtype="std::string", description="frame id", default="world", configurable=False)
+
+# Topics
+topic = gen.add_group("Topics")
+topic.add("input_camera_info", paramtype="std::string", description="camera info topic", default="/kinect2/sd/camera_info", configurable=False)
+topic.add("input_image", paramtype="std::string", description="image topic", default="/kinect2/sd/image_color_rect", configurable=False)
+topic.add("input_depth", paramtype="std::string", description="depth topic", default="/kinect2/sd/image_depth", configurable=False)
+topic.add("input_pcl", paramtype="std::string", description="pcl topic", default="/kinect2/sd/points", configurable=False)
+
+# Publisher and subscriber (group name will show up in dynamic_reconfigure window)
+pub_sub = gen.add_group("Publisher and subscriber")
+pub_sub.add_subscriber("dummy_subscriber", message_type="std_msgs::Header", description="example subscriber", default_topic="in_topic", no_delay=True, configurable=True)
+pub_sub.add_subscriber("depth_subscriber", message_type="sensor_msgs::PointCloud2", description="example subscriber", default_topic="/clean_points/output", no_delay=True, configurable=True)
+pub_sub.add_subscriber("subscriber_camera_info", message_type="sensor_msgs::CameraInfo", description="subscribe camera info (once)", default_topic="/camera_info", no_delay=True, configurable=True)
+
+pub_sub.add_publisher("dummy_publisher", message_type="std_msgs::Header", description="example publisher", default_topic="out_topic", configurable=True)
+pub_sub.add_publisher("depth_publisher", message_type="sensor_msgs::PointCloud2", description="voxel_test_publihser", default_topic="voxel", configurable=True)
+pub_sub.add_publisher("ground_publisher", message_type="sensor_msgs::PointCloud2", description="voxel_test_publihser", default_topic="ground", configurable=True)
+pub_sub.add_publisher("pcl_publisher", message_type="sensor_msgs::PointCloud2", description="voxel_test_publihser", default_topic="pcl2", configurable=True)
+pub_sub.add_publisher("obstacle_publisher", message_type="sensor_msgs::PointCloud2", description="voxel_test_publihser", default_topic="obstacle", configurable=True)
+pub_sub.add_publisher("state_publisher", message_type="std_msgs::Int8", description="passing state", default_topic="state_publisher_", configurable=True)
+pub_sub.add_publisher("penner", message_type="std_msgs::Int8", description="passing state2", default_topic="/_penner", configurable=True)
+
+# DO NOT TOUCH THIS LINE
+#Syntax : Package, Node, Config Name(The final name will be RobotDetectorConfig)
+exit(gen.generate("additional_task_ros_tool", "robot_detector", "RobotDetector"))

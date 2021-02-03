@@ -1,0 +1,12 @@
+<library path="lib/libsign_detection_nodelet">
+<class name="sign_detection_ros_tool/SignDetectionNodelet"
+       type="sign_detection_ros_tool::SignDetectionNodelet" base_class_type="nodelet::Nodelet">
+  <description></description>
+</class>
+</library>
+<library path="lib/libsign_detection_nodelet">
+<class name="sign_detection_ros_tool/SignDetectionNodelet"
+       type="sign_detection_ros_tool::SignDetectionNodelet" base_class_type="nodelet::Nodelet">
+  <description></description>
+</class>
+</library>

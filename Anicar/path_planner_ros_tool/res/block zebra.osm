@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version='0.6' generator='JOSM'>
+  <node id='-176144' action='modify' lat='4.9' lon='9.0'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-27613' />
+  </node>
+  <node id='-176146' action='modify' lat='4.9' lon='9.05'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-27614' />
+  </node>
+  <node id='-176148' action='modify' lat='4.9' lon='9.1'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-27615' />
+  </node>
+  <node id='-176652' action='modify' lat='4.95' lon='9.0'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-27867' />
+  </node>
+  <node id='-176654' action='modify' lat='4.95' lon='9.05'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-27868' />
+  </node>
+  <node id='-176656' action='modify' lat='4.95' lon='9.1'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-27869' />
+  </node>
+  <node id='-177160' action='modify' lat='5.0' lon='9.0'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-28121' />
+  </node>
+  <node id='-177162' action='modify' lat='5.0' lon='9.05'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-28122' />
+  </node>
+  <node id='-177164' action='modify' lat='5.0' lon='9.1'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-28123' />
+  </node>
+  <node id='-177668' action='modify' lat='5.05' lon='9.0'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-28375' />
+  </node>
+  <node id='-177670' action='modify' lat='5.05' lon='9.05'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-28376' />
+  </node>
+  <node id='-177672' action='modify' lat='5.05' lon='9.1'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-28377' />
+  </node>
+  <node id='-178176' action='modify' lat='5.1' lon='9.0'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-28629' />
+  </node>
+  <node id='-178178' action='modify' lat='5.1' lon='9.05'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-28630' />
+  </node>
+  <node id='-178180' action='modify' lat='5.1' lon='9.1'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-28631' />
+  </node>
+  <node id='-178684' action='modify' lat='5.15' lon='9.0'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-28883' />
+  </node>
+  <node id='-178686' action='modify' lat='5.15' lon='9.05'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-28884' />
+  </node>
+  <node id='-178688' action='modify' lat='5.15' lon='9.1'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-28885' />
+  </node>
+  <node id='-179192' action='modify' lat='5.2' lon='9.0'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-29137' />
+  </node>
+  <node id='-179194' action='modify' lat='5.2' lon='9.05'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-29138' />
+  </node>
+  <node id='-179196' action='modify' lat='5.2' lon='9.1'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-29139' />
+  </node>
+  <node id='-179700' action='modify' lat='5.25' lon='9.0'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-29391' />
+  </node>
+  <node id='-179702' action='modify' lat='5.25' lon='9.05'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-29392' />
+  </node>
+  <node id='-179704' action='modify' lat='5.25' lon='9.1'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-29393' />
+  </node>
+  <node id='-180208' action='modify' lat='5.3' lon='9.0'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-29645' />
+  </node>
+  <node id='-180210' action='modify' lat='5.3' lon='9.05'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-29646' />
+  </node>
+  <node id='-180212' action='modify' lat='5.3' lon='9.1'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-29647' />
+  </node>
+  <node id='-180716' action='modify' lat='5.35' lon='9.0'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-29899' />
+  </node>
+  <node id='-180718' action='modify' lat='5.35' lon='9.05'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-29900' />
+  </node>
+  <node id='-180720' action='modify' lat='5.35' lon='9.1'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-29901' />
+  </node>
+  <node id='-181224' action='modify' lat='5.4' lon='9.0'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-30153' />
+  </node>
+  <node id='-181226' action='modify' lat='5.4' lon='9.05'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-30154' />
+  </node>
+  <node id='-181228' action='modify' lat='5.4' lon='9.1'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-30155' />
+  </node>
+  <node id='-181732' action='modify' lat='5.45' lon='9.0'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-30407' />
+  </node>
+  <node id='-181734' action='modify' lat='5.45' lon='9.05'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-30408' />
+  </node>
+  <node id='-181736' action='modify' lat='5.45' lon='9.1'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-30409' />
+  </node>
+  <node id='-182240' action='modify' lat='5.5' lon='9.0'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-30661' />
+  </node>
+  <node id='-182242' action='modify' lat='5.5' lon='9.05'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-30662' />
+  </node>
+  <node id='-182244' action='modify' lat='5.5' lon='9.1'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-30663' />
+  </node>
+  <node id='-182748' action='modify' lat='5.55' lon='9.0'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-30915' />
+  </node>
+  <node id='-182750' action='modify' lat='5.55' lon='9.05'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-30916' />
+  </node>
+  <node id='-182752' action='modify' lat='5.55' lon='9.1'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-30917' />
+  </node>
+  <node id='-183256' action='modify' lat='5.6' lon='9.0'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-31169' />
+  </node>
+  <node id='-183258' action='modify' lat='5.6' lon='9.05'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-31170' />
+  </node>
+  <node id='-183260' action='modify' lat='5.6' lon='9.1'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-31171' />
+  </node>
+  <node id='-183764' action='modify' lat='5.65' lon='9.0'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-31423' />
+  </node>
+  <node id='-183766' action='modify' lat='5.65' lon='9.05'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-31424' />
+  </node>
+  <node id='-183768' action='modify' lat='5.65' lon='9.1'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-31425' />
+  </node>
+  <node id='-184272' action='modify' lat='5.7' lon='9.0'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-31677' />
+  </node>
+  <node id='-184274' action='modify' lat='5.7' lon='9.05'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-31678' />
+  </node>
+  <node id='-184276' action='modify' lat='5.7' lon='9.1'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-31679' />
+  </node>
+  <node id='-184780' action='modify' lat='5.75' lon='9.0'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-31931' />
+  </node>
+  <node id='-184782' action='modify' lat='5.75' lon='9.05'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-31932' />
+  </node>
+  <node id='-184784' action='modify' lat='5.75' lon='9.1'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-31933' />
+  </node>
+  <node id='-185288' action='modify' lat='5.8' lon='9.0'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-32185' />
+  </node>
+  <node id='-185290' action='modify' lat='5.8' lon='9.05'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-32186' />
+  </node>
+  <node id='-185292' action='modify' lat='5.8' lon='9.1'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-32187' />
+  </node>
+  <node id='-185796' action='modify' lat='5.85' lon='9.0'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-32439' />
+  </node>
+  <node id='-185798' action='modify' lat='5.85' lon='9.05'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-32440' />
+  </node>
+  <node id='-185800' action='modify' lat='5.85' lon='9.1'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-32441' />
+  </node>
+  <node id='-186304' action='modify' lat='5.9' lon='9.0'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-32693' />
+  </node>
+  <node id='-186306' action='modify' lat='5.9' lon='9.05'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-32694' />
+  </node>
+  <node id='-186308' action='modify' lat='5.9' lon='9.1'>
+    <tag k='colour' v='white' />
+    <tag k='real_id' v='-32695' />
+  </node>
+</osm>

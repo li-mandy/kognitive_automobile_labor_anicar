@@ -1,0 +1,9 @@
+<launch>
+
+  <arg name="config" default="$(find sign_detection_ros_tool)/launch/params/sign_detection_parameters.yaml" />
+
+  <node pkg="sign_detection_ros_tool" type="sign_detection" name="sign_detection" output="screen">
+    <rosparam command="load" file="$(arg config)"/>
+  </node>
+
+</launch>
