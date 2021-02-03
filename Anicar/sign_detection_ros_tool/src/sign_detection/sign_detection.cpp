@@ -48,7 +48,7 @@ namespace sign_detection_ros_tool {
             }
 
         }
-        //Low confidence
+
         vector<int> indices;//Save index without overlapping borders
         //This function is used to suppress overlapping borders
         cv::dnn::NMSBoxes(boxes,confidences,confThreshold,nmsThreshold,indices);
