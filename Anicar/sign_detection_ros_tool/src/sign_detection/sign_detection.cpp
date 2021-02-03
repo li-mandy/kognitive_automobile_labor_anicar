@@ -60,7 +60,7 @@ namespace sign_detection_ros_tool {
         }
     }
     //Draw prediction bounding box and publish messages of detected results
-    void SignDetection::drawPred(int classId,float conf,int left,int top,int right,int bottom,cv::Mat& frame) {//绘制边界框
+    void SignDetection::drawPred(int classId,float conf,int left,int top,int right,int bottom,cv::Mat& frame) {
         cv::rectangle(frame, cv::Point(left, top), cv::Point(right, bottom), cv::Scalar(255, 178, 50), 3);
 
         string label = cv::format("%.2f", conf);
